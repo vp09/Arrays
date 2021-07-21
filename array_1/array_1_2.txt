@@ -1,0 +1,20 @@
+int main()
+{
+    int n, m;
+    int arr[m];
+    scanf("%d%d",&n,&m);
+    
+    for(int i=0;i<m;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<m;i++){
+        if (arr[i]==n){
+            printf("TRUE");
+        }
+        
+        
+    }
+
+    return 0;
+
+}

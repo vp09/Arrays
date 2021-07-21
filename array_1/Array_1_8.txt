@@ -1,0 +1,64 @@
+_________using std sort() function in c++_______
+
+#include <stdio.h>
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,arr[n],i;
+    cin>>n;
+    for(i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    sort(arr,arr+n);
+    for(i=0;i<n;i++){
+        cout<<arr[i]<<"\n";
+    }
+    
+
+    return 0;
+}
+
+_________________BruteForceAttempt________________
+#include <stdio.h>
+
+int main()
+{
+    int arr[10],zero=0,one=0,two=0;
+    //scanf("%d",&n);
+    for(int i =0;i<10;i++){
+        scanf("%d",&arr[i]);
+    }
+    // for(int i =0;i<10;i++){
+    //     printf("%d\n",arr[i]);
+    // }
+    for(int i =0;i<10;i++){
+        if(arr[i]==0){
+            zero++;
+        }
+        else if(arr[i]==1){
+            one++;
+        }
+        else{
+            two++;
+        }
+    }
+    // printf("%d%d%d",zero,one,two);
+    for(int i =0;i<zero;i++){
+        arr[i]=0;
+    }
+    for(int i =zero;i<zero+one;i++){
+        arr[i]=1;
+    }
+    for(int i =zero+one;i<zero+one+two;i++){
+        arr[i]=2;
+    }
+    for(int i =0;i<10;i++){
+        printf("::%d::",arr[i]);
+    }
+    // //printf("Hello World");
+
+    return 0;
+}

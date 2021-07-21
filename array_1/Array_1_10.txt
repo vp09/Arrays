@@ -1,0 +1,13 @@
+_______________PYTHON SOLN_____________
+n=int(input())
+arr=list(map(int,input().strip().split()))
+l,m=[],[]
+for i in arr:
+    if i<0:
+        l.append(i)
+    else:
+        m.append(i)
+l.extend(m)
+print(l)
+
+_________________C SOLN__________________
